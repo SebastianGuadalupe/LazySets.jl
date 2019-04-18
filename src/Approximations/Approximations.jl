@@ -8,6 +8,8 @@ module Approximations
 
 using LazySets, Requires
 
+import LazySets: isbounded
+
 export approximate,
        ballinf_approximation,
        box_approximation, interval_hull,
