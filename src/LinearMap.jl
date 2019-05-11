@@ -17,7 +17,7 @@ Type that represents a linear transformation ``M⋅S`` of a convex set ``S``.
 ### Notes
 
 This type is parametric in the elements of the linear map, `NM`, which is
-independent of the numeric type of the target set (`N`).
+independent of the numeric type of the wrapped set (`N`).
 Typically `NM = N`, but there may be exceptions, e.g., if `NM` is an interval
 that holds numbers of type `N`, where `N` is a floating point number type such
 as `Float64`.

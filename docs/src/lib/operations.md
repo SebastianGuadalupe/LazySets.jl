@@ -303,6 +303,31 @@ Inherited from [`LazySet`](@ref):
 * [`radius`](@ref radius(::LazySet, ::Real))
 * [`diameter`](@ref diameter(::LazySet, ::Real))
 
+### Translation
+
+```@docs
+Translation
++(X::LazySet, v::AbstractVector)
+⊕(X::LazySet, v::AbstractVector)
+dim(::Translation)
+ρ(::AbstractVector{N}, ::Translation{N}) where {N<:Real}
+σ(::AbstractVector{N}, ::Translation{N}) where {N<:Real}
+an_element(::Translation)
+isempty(::Translation)
+constraints_list(::Translation{N}, ::Val{true}) where {N<:Real}
+LinearMap(::AbstractMatrix{N}, ::Translation{N}) where {N<:Real}
+```
+
+### Affine Map
+
+```@docs
+AffineMap
+dim(::AffineMap)
+σ(::AbstractVector{N}, ::AffineMap{N}) where {N<:Real}
+an_element(::AffineMap)
+isempty(::AffineMap)
+```
+
 ## Symmetric Interval Hull
 
 ```@docs
@@ -334,21 +359,6 @@ Inherited from [`AbstractHyperrectangle`](@ref):
 * [`vertices_list`](@ref vertices_list(::AbstractHyperrectangle{N}) where {N<:Real})
 * [`high`](@ref high(::AbstractHyperrectangle{N}) where {N<:Real})
 * [`low`](@ref low(::AbstractHyperrectangle{N}) where {N<:Real})
-
-### Translation
-
-```@docs
-Translation
-+(X::LazySet, v::AbstractVector)
-⊕(X::LazySet, v::AbstractVector)
-dim(::Translation)
-ρ(::AbstractVector{N}, ::Translation{N}) where {N<:Real}
-σ(::AbstractVector{N}, ::Translation{N}) where {N<:Real}
-an_element(::Translation)
-isempty(::Translation)
-constraints_list(::Translation{N}, ::Val{true}) where {N<:Real}
-LinearMap(::AbstractMatrix{N}, ::Translation{N}) where {N<:Real}
-```
 
 ## Union
 

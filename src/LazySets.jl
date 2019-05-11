@@ -65,6 +65,7 @@ include("concrete_convex_hull.jl")
 # =================================
 # Types representing set operations
 # =================================
+include("AffineMap.jl")
 include("CartesianProduct.jl")
 include("ConvexHull.jl")
 include("ExponentialMap.jl")
@@ -75,6 +76,7 @@ include("ResetMap.jl")
 include("SymmetricIntervalHull.jl")
 include("Translation.jl")
 include("UnionSet.jl")
+
 
 # =============================
 # Conversions between set types
