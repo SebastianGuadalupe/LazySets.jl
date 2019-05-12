@@ -44,9 +44,10 @@ The subtypes of `LazySet` (including abstract interfaces):
 julia> using LazySets: subtypes
 
 julia> subtypes(LazySet, false)
-17-element Array{Any,1}:
+18-element Array{Any,1}:
  AbstractCentrallySymmetric
  AbstractPolyhedron
+ AffineMap
  CacheMinkowskiSum
  CartesianProduct
  CartesianProductArray
